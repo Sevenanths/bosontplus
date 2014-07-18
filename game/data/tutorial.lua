@@ -1,0 +1,7 @@
+tutorial_messages = {
+    left = "TOUCH LEFT SIDE TO JUMP LEFT",
+    longright = "TOUCH RIGHT SIDE TO JUMP RIGHT\nHOLD FOR LONGER JUMPS",
+    straight = "TOUCH LEFT AND RIGHT SIDES\nTOGETHER TO JUMP STRAIGHT",
+    energy = "RUN ON BLUE PLATFORMS\nTO INCREASE ENERGY",
+    goodluck = "GOOD LUCK PROFESSOR!",
+}
