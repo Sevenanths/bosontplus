@@ -1,6 +1,6 @@
 local level = ...
 local params = {}
-params.bg_color = {30, 30, 30}
+params.bg_color = {78, 119, 156}
 params.bg_color_alt = {232, 143, 38}
 
 params.master_ambient = {160, 156, 139}

@@ -25,3 +25,12 @@ Z:\Projecten\bosont+\BosonTools\BosonTools\obj\Debug\BosonTools.frmMain.resource
 Y:\GitHub\bosontplus\BosonTools\BosonTools\bin\Debug\BosonTools.exe.config
 Y:\GitHub\bosontplus\BosonTools\BosonTools\obj\Debug\BosonTools.exe
 Y:\GitHub\bosontplus\BosonTools\BosonTools\obj\Debug\BosonTools.pdb
+Y:\GitHub\bosontplus\BosonTools\BosonTools\bin\Debug\BosonTools.exe
+Y:\GitHub\bosontplus\BosonTools\BosonTools\bin\Debug\BosonTools.pdb
+Y:\GitHub\bosontplus\BosonTools\BosonTools\obj\Debug\BosonTools.csprojResolveAssemblyReference.cache
+Y:\GitHub\bosontplus\BosonTools\BosonTools\obj\Debug\BosonTools.bgEditor.resources
+Y:\GitHub\bosontplus\BosonTools\BosonTools\obj\Debug\BosonTools.frmLevelEditor.resources
+Y:\GitHub\bosontplus\BosonTools\BosonTools\obj\Debug\BosonTools.frmLevelEditorNeue.resources
+Y:\GitHub\bosontplus\BosonTools\BosonTools\obj\Debug\BosonTools.frmMain.resources
+Y:\GitHub\bosontplus\BosonTools\BosonTools\obj\Debug\BosonTools.Properties.Resources.resources
+Y:\GitHub\bosontplus\BosonTools\BosonTools\obj\Debug\BosonTools.csproj.GenerateResource.Cache

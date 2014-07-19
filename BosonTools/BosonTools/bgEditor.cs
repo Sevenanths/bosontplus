@@ -25,33 +25,13 @@ namespace BosonTools
 
         private void pnlBgEdit_Paint(object sender, PaintEventArgs e)
         {
-            string[] bglines = File.ReadAllLines(main.datalocation + levelname);
-            foreach (string bgline in bglines)
-            {
-                if (bgline.StartsWith("params"))
-                {
-                    string bgtype = bgline.Split(new char[] { '.', '=' }, StringSplitOptions.None)[1].Trim();
-                    MatchCollection bracketcollection = Regex.Matches(bgline, "{(.*?)}");
-                    foreach (Match matchbracket in bracketcollection)
-                    {
-                        if (bgtype == "bg_color")
-                        {
-                            int[] rgbint = bgEdit.matchtorgb(matchbracket);
-                            pnlBg.BackColor = Color.FromArgb(rgbint[0], rgbint[1], rgbint[2]);
-                        }
-                        else if (bgtype == "master_ambient")
-                        {
-                            int[] rgbint = bgEdit.matchtorgb(matchbracket);
-                            e.Graphics.DrawImage(bgEdit.ChangeColor(Properties.Resources.energy, Color.FromArgb(rgbint[0], rgbint[1], rgbint[2])), 0, 0, 601, 338);
-                        }
-                    }
-                }
-            }
+            
 
-            //e.Graphics.DrawImage(Image.FromFile("Z:/Projecten/bosont+/photoshop/barrier.png"), 0, 0, 601, 338);
-            //e.Graphics.DrawImage(Image.FromFile("Z:/Projecten/bosont+/photoshop/lane.png"), 0, 0, 601, 338);
-            //e.Graphics.DrawImage(Image.FromFile("Z:/Projecten/bosont+/photoshop/energy.png"), 0, 0, 601, 338);
-            //e.Graphics.DrawImage(Image.FromFile("Z:/Projecten/bosont+/photoshop/collapse.png"), 0, 0, 601, 338);
+                //e.Graphics.DrawImage(Image.FromFile("Z:/Projecten/bosont+/photoshop/barrier.png"), 0, 0, 601, 338);
+                //e.Graphics.DrawImage(Image.FromFile("Z:/Projecten/bosont+/photoshop/lane.png"), 0, 0, 601, 338);
+                //e.Graphics.DrawImage(Image.FromFile("Z:/Projecten/bosont+/photoshop/energy.png"), 0, 0, 601, 338);
+                //e.Graphics.DrawImage(Image.FromFile("Z:/Projecten/bosont+/photoshop/collapse.png"), 0, 0, 601, 338);
+            
         }
 
         private void bgEditor_Load(object sender, EventArgs e)
@@ -88,7 +68,14 @@ namespace BosonTools
                     pnlBg.Invalidate();
                     break;
             }
+            bgEdit.loadBackgroundData(main.datalocation + levelname, lvwSections);
             //bgEdit.visualizeBackgrounds(main.datalocation + levelname, pnlBg);
+        }
+
+        private void lvwSections_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            bgEdit.listviewToEditables(lvwSections, txtValue, LblColour, lblDeclColour);
+            //MessageBox.Show(lvwSections.SelectedItems[0].Tag.ToString());
         }
     }
 }

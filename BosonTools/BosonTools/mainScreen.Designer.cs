@@ -36,6 +36,7 @@
             this.txtGamePath = new System.Windows.Forms.TextBox();
             this.pnlButtons = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnAndroid = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.pnlTop.SuspendLayout();
             this.pnlButtons.SuspendLayout();
@@ -73,12 +74,12 @@
             this.pnlTop.Controls.Add(this.pbxLogo);
             this.pnlTop.Location = new System.Drawing.Point(-1, -1);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(854, 52);
+            this.pnlTop.Size = new System.Drawing.Size(668, 52);
             this.pnlTop.TabIndex = 2;
             // 
             // btnBrowseGamePath
             // 
-            this.btnBrowseGamePath.Location = new System.Drawing.Point(716, 16);
+            this.btnBrowseGamePath.Location = new System.Drawing.Point(592, 16);
             this.btnBrowseGamePath.Name = "btnBrowseGamePath";
             this.btnBrowseGamePath.Size = new System.Drawing.Size(75, 24);
             this.btnBrowseGamePath.TabIndex = 2;
@@ -88,7 +89,7 @@
             // 
             // txtGamePath
             // 
-            this.txtGamePath.Location = new System.Drawing.Point(611, 17);
+            this.txtGamePath.Location = new System.Drawing.Point(487, 17);
             this.txtGamePath.Name = "txtGamePath";
             this.txtGamePath.ReadOnly = true;
             this.txtGamePath.Size = new System.Drawing.Size(100, 22);
@@ -97,12 +98,13 @@
             // 
             // pnlButtons
             // 
+            this.pnlButtons.Controls.Add(this.btnAndroid);
             this.pnlButtons.Controls.Add(this.button1);
             this.pnlButtons.Controls.Add(this.btnPatternEdit);
             this.pnlButtons.Enabled = false;
             this.pnlButtons.Location = new System.Drawing.Point(-1, 52);
             this.pnlButtons.Name = "pnlButtons";
-            this.pnlButtons.Size = new System.Drawing.Size(807, 368);
+            this.pnlButtons.Size = new System.Drawing.Size(692, 354);
             this.pnlButtons.TabIndex = 3;
             // 
             // button1
@@ -119,12 +121,25 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnAndroid
+            // 
+            this.btnAndroid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAndroid.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAndroid.ForeColor = System.Drawing.Color.White;
+            this.btnAndroid.Image = ((System.Drawing.Image)(resources.GetObject("btnAndroid.Image")));
+            this.btnAndroid.Location = new System.Drawing.Point(454, 15);
+            this.btnAndroid.Name = "btnAndroid";
+            this.btnAndroid.Size = new System.Drawing.Size(214, 74);
+            this.btnAndroid.TabIndex = 3;
+            this.btnAndroid.Text = "CREATE APK";
+            this.btnAndroid.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(804, 404);
+            this.ClientSize = new System.Drawing.Size(680, 404);
             this.Controls.Add(this.pnlButtons);
             this.Controls.Add(this.pnlTop);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F);
@@ -148,5 +163,6 @@
         private System.Windows.Forms.TextBox txtGamePath;
         private System.Windows.Forms.Panel pnlButtons;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAndroid;
     }
 }

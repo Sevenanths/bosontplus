@@ -35,8 +35,13 @@
             this.pbxErik = new System.Windows.Forms.PictureBox();
             this.lvwSections = new System.Windows.Forms.ListView();
             this.cbbDiffuse = new System.Windows.Forms.CheckBox();
+            this.pnlEdit = new System.Windows.Forms.Panel();
+            this.LblColour = new System.Windows.Forms.LinkLabel();
+            this.lblDeclColour = new System.Windows.Forms.Label();
+            this.txtValue = new System.Windows.Forms.TextBox();
             this.pnlBg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxErik)).BeginInit();
+            this.pnlEdit.SuspendLayout();
             this.SuspendLayout();
             // 
             // cbxStageSelect
@@ -89,12 +94,14 @@
             // 
             // lvwSections
             // 
+            this.lvwSections.HideSelection = false;
             this.lvwSections.Location = new System.Drawing.Point(12, 39);
             this.lvwSections.Name = "lvwSections";
             this.lvwSections.Size = new System.Drawing.Size(129, 339);
             this.lvwSections.TabIndex = 2;
             this.lvwSections.UseCompatibleStateImageBehavior = false;
             this.lvwSections.View = System.Windows.Forms.View.SmallIcon;
+            this.lvwSections.SelectedIndexChanged += new System.EventHandler(this.lvwSections_SelectedIndexChanged);
             // 
             // cbbDiffuse
             // 
@@ -107,12 +114,56 @@
             this.cbbDiffuse.Text = "Diffuse";
             this.cbbDiffuse.UseVisualStyleBackColor = true;
             // 
+            // pnlEdit
+            // 
+            this.pnlEdit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlEdit.Controls.Add(this.lblDeclColour);
+            this.pnlEdit.Controls.Add(this.LblColour);
+            this.pnlEdit.Controls.Add(this.txtValue);
+            this.pnlEdit.Location = new System.Drawing.Point(754, 40);
+            this.pnlEdit.Name = "pnlEdit";
+            this.pnlEdit.Size = new System.Drawing.Size(129, 339);
+            this.pnlEdit.TabIndex = 17;
+            // 
+            // LblColour
+            // 
+            this.LblColour.AutoSize = true;
+            this.LblColour.Font = new System.Drawing.Font("Segoe UI", 13.25F);
+            this.LblColour.LinkColor = System.Drawing.Color.White;
+            this.LblColour.Location = new System.Drawing.Point(4, 2);
+            this.LblColour.Name = "LblColour";
+            this.LblColour.Size = new System.Drawing.Size(120, 25);
+            this.LblColour.TabIndex = 18;
+            this.LblColour.TabStop = true;
+            this.LblColour.Text = "213, 123, 123";
+            this.LblColour.Visible = false;
+            // 
+            // lblDeclColour
+            // 
+            this.lblDeclColour.AutoSize = true;
+            this.lblDeclColour.ForeColor = System.Drawing.Color.Gainsboro;
+            this.lblDeclColour.Location = new System.Drawing.Point(18, 27);
+            this.lblDeclColour.Name = "lblDeclColour";
+            this.lblDeclColour.Size = new System.Drawing.Size(84, 13);
+            this.lblDeclColour.TabIndex = 19;
+            this.lblDeclColour.Text = "(click to adjust)";
+            this.lblDeclColour.Visible = false;
+            // 
+            // txtValue
+            // 
+            this.txtValue.Location = new System.Drawing.Point(3, 5);
+            this.txtValue.Name = "txtValue";
+            this.txtValue.Size = new System.Drawing.Size(120, 22);
+            this.txtValue.TabIndex = 18;
+            this.txtValue.Visible = false;
+            // 
             // bgEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1049, 390);
+            this.ClientSize = new System.Drawing.Size(895, 390);
+            this.Controls.Add(this.pnlEdit);
             this.Controls.Add(this.cbbDiffuse);
             this.Controls.Add(this.lvwSections);
             this.Controls.Add(this.pnlBg);
@@ -124,6 +175,8 @@
             this.Load += new System.EventHandler(this.bgEditor_Load);
             this.pnlBg.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbxErik)).EndInit();
+            this.pnlEdit.ResumeLayout(false);
+            this.pnlEdit.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,5 +190,9 @@
         private System.Windows.Forms.ListView lvwSections;
         private System.Windows.Forms.PictureBox pbxErik;
         private System.Windows.Forms.CheckBox cbbDiffuse;
+        private System.Windows.Forms.Panel pnlEdit;
+        private System.Windows.Forms.Label lblDeclColour;
+        private System.Windows.Forms.LinkLabel LblColour;
+        private System.Windows.Forms.TextBox txtValue;
     }
 }
