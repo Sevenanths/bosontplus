@@ -35,8 +35,11 @@
             this.btnBrowseGamePath = new System.Windows.Forms.Button();
             this.txtGamePath = new System.Windows.Forms.TextBox();
             this.pnlButtons = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnAndroid = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnResource = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbxLogo)).BeginInit();
             this.pnlTop.SuspendLayout();
             this.pnlButtons.SuspendLayout();
@@ -45,7 +48,7 @@
             // pbxLogo
             // 
             this.pbxLogo.Image = ((System.Drawing.Image)(resources.GetObject("pbxLogo.Image")));
-            this.pbxLogo.Location = new System.Drawing.Point(13, 13);
+            this.pbxLogo.Location = new System.Drawing.Point(15, 12);
             this.pbxLogo.Name = "pbxLogo";
             this.pbxLogo.Size = new System.Drawing.Size(214, 27);
             this.pbxLogo.TabIndex = 0;
@@ -74,7 +77,7 @@
             this.pnlTop.Controls.Add(this.pbxLogo);
             this.pnlTop.Location = new System.Drawing.Point(-1, -1);
             this.pnlTop.Name = "pnlTop";
-            this.pnlTop.Size = new System.Drawing.Size(668, 52);
+            this.pnlTop.Size = new System.Drawing.Size(692, 52);
             this.pnlTop.TabIndex = 2;
             // 
             // btnBrowseGamePath
@@ -98,6 +101,9 @@
             // 
             // pnlButtons
             // 
+            this.pnlButtons.Controls.Add(this.button3);
+            this.pnlButtons.Controls.Add(this.button2);
+            this.pnlButtons.Controls.Add(this.btnResource);
             this.pnlButtons.Controls.Add(this.btnAndroid);
             this.pnlButtons.Controls.Add(this.button1);
             this.pnlButtons.Controls.Add(this.btnPatternEdit);
@@ -106,6 +112,19 @@
             this.pnlButtons.Name = "pnlButtons";
             this.pnlButtons.Size = new System.Drawing.Size(692, 354);
             this.pnlButtons.TabIndex = 3;
+            // 
+            // btnAndroid
+            // 
+            this.btnAndroid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAndroid.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAndroid.ForeColor = System.Drawing.Color.White;
+            this.btnAndroid.Image = ((System.Drawing.Image)(resources.GetObject("btnAndroid.Image")));
+            this.btnAndroid.Location = new System.Drawing.Point(454, 15);
+            this.btnAndroid.Name = "btnAndroid";
+            this.btnAndroid.Size = new System.Drawing.Size(214, 74);
+            this.btnAndroid.TabIndex = 3;
+            this.btnAndroid.Text = "CREATE APK";
+            this.btnAndroid.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -121,18 +140,41 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnAndroid
+            // btnResource
             // 
-            this.btnAndroid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAndroid.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAndroid.ForeColor = System.Drawing.Color.White;
-            this.btnAndroid.Image = ((System.Drawing.Image)(resources.GetObject("btnAndroid.Image")));
-            this.btnAndroid.Location = new System.Drawing.Point(454, 15);
-            this.btnAndroid.Name = "btnAndroid";
-            this.btnAndroid.Size = new System.Drawing.Size(214, 74);
-            this.btnAndroid.TabIndex = 3;
-            this.btnAndroid.Text = "CREATE APK";
-            this.btnAndroid.UseVisualStyleBackColor = true;
+            this.btnResource.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnResource.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResource.ForeColor = System.Drawing.Color.White;
+            this.btnResource.Location = new System.Drawing.Point(13, 95);
+            this.btnResource.Name = "btnResource";
+            this.btnResource.Size = new System.Drawing.Size(214, 74);
+            this.btnResource.TabIndex = 4;
+            this.btnResource.Text = "EDIT RESOURCES";
+            this.btnResource.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(234, 95);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(214, 74);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "MODS";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(454, 95);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(214, 74);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "LEVEL DEPOT";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
@@ -164,5 +206,8 @@
         private System.Windows.Forms.Panel pnlButtons;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnAndroid;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnResource;
     }
 }

@@ -29,6 +29,34 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(bgEditor));
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("bg_color");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("bg_color_alt");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("master_ambient");
+            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("master_diffuse");
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("normal_ambient");
+            System.Windows.Forms.ListViewItem listViewItem6 = new System.Windows.Forms.ListViewItem("normal_diffuse");
+            System.Windows.Forms.ListViewItem listViewItem7 = new System.Windows.Forms.ListViewItem("energy_ambient");
+            System.Windows.Forms.ListViewItem listViewItem8 = new System.Windows.Forms.ListViewItem("energy_diffuse");
+            System.Windows.Forms.ListViewItem listViewItem9 = new System.Windows.Forms.ListViewItem("collapse_ambient");
+            System.Windows.Forms.ListViewItem listViewItem10 = new System.Windows.Forms.ListViewItem("collapse_diffuse");
+            System.Windows.Forms.ListViewItem listViewItem11 = new System.Windows.Forms.ListViewItem("master_ambient_alt");
+            System.Windows.Forms.ListViewItem listViewItem12 = new System.Windows.Forms.ListViewItem("master_diffuse_alt");
+            System.Windows.Forms.ListViewItem listViewItem13 = new System.Windows.Forms.ListViewItem("normal_ambient_alt");
+            System.Windows.Forms.ListViewItem listViewItem14 = new System.Windows.Forms.ListViewItem("normal_diffuse_alt");
+            System.Windows.Forms.ListViewItem listViewItem15 = new System.Windows.Forms.ListViewItem("energy_ambient_alt");
+            System.Windows.Forms.ListViewItem listViewItem16 = new System.Windows.Forms.ListViewItem("energy_diffuse_alt");
+            System.Windows.Forms.ListViewItem listViewItem17 = new System.Windows.Forms.ListViewItem("collapse_ambient_alt");
+            System.Windows.Forms.ListViewItem listViewItem18 = new System.Windows.Forms.ListViewItem("collapse_diffuse_alt");
+            System.Windows.Forms.ListViewItem listViewItem19 = new System.Windows.Forms.ListViewItem("num_plains");
+            System.Windows.Forms.ListViewItem listViewItem20 = new System.Windows.Forms.ListViewItem("start_angle");
+            System.Windows.Forms.ListViewItem listViewItem21 = new System.Windows.Forms.ListViewItem("particles_blend_mode");
+            System.Windows.Forms.ListViewItem listViewItem22 = new System.Windows.Forms.ListViewItem("particles_blend_mode_alt");
+            System.Windows.Forms.ListViewItem listViewItem23 = new System.Windows.Forms.ListViewItem("particles_color");
+            System.Windows.Forms.ListViewItem listViewItem24 = new System.Windows.Forms.ListViewItem("particles_color_var");
+            System.Windows.Forms.ListViewItem listViewItem25 = new System.Windows.Forms.ListViewItem("particles_size");
+            System.Windows.Forms.ListViewItem listViewItem26 = new System.Windows.Forms.ListViewItem("particles_size_var");
+            System.Windows.Forms.ListViewItem listViewItem27 = new System.Windows.Forms.ListViewItem("particles_width");
+            System.Windows.Forms.ListViewItem listViewItem28 = new System.Windows.Forms.ListViewItem("num_particles");
             this.cbxStageSelect = new System.Windows.Forms.ComboBox();
             this.btnSaveChanges = new System.Windows.Forms.Button();
             this.pnlBg = new System.Windows.Forms.Panel();
@@ -36,9 +64,9 @@
             this.lvwSections = new System.Windows.Forms.ListView();
             this.cbbDiffuse = new System.Windows.Forms.CheckBox();
             this.pnlEdit = new System.Windows.Forms.Panel();
-            this.LblColour = new System.Windows.Forms.LinkLabel();
             this.lblDeclColour = new System.Windows.Forms.Label();
             this.txtValue = new System.Windows.Forms.TextBox();
+            this.LblColour = new System.Windows.Forms.LinkLabel();
             this.pnlBg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxErik)).BeginInit();
             this.pnlEdit.SuspendLayout();
@@ -68,6 +96,7 @@
             this.btnSaveChanges.TabIndex = 14;
             this.btnSaveChanges.Text = "Save changes";
             this.btnSaveChanges.UseVisualStyleBackColor = true;
+            this.btnSaveChanges.Click += new System.EventHandler(this.btnSaveChanges_Click);
             // 
             // pnlBg
             // 
@@ -95,6 +124,63 @@
             // lvwSections
             // 
             this.lvwSections.HideSelection = false;
+            listViewItem1.Tag = "color;";
+            listViewItem2.Tag = "color;";
+            listViewItem3.Tag = "color;";
+            listViewItem4.Tag = "color;";
+            listViewItem5.Tag = "color;";
+            listViewItem6.Tag = "color;";
+            listViewItem7.Tag = "color;";
+            listViewItem8.Tag = "color;";
+            listViewItem9.Tag = "color;";
+            listViewItem10.Tag = "color;";
+            listViewItem11.Tag = "color;";
+            listViewItem12.Tag = "color;";
+            listViewItem13.Tag = "color;";
+            listViewItem14.Tag = "color;";
+            listViewItem15.Tag = "color;";
+            listViewItem16.Tag = "color;";
+            listViewItem17.Tag = "color;";
+            listViewItem18.Tag = "color;";
+            listViewItem19.Tag = "value;";
+            listViewItem20.Tag = "value;";
+            listViewItem21.Tag = "value;";
+            listViewItem22.Tag = "value;";
+            listViewItem23.Tag = "particles;";
+            listViewItem24.Tag = "particles;";
+            listViewItem25.Tag = "value;";
+            listViewItem26.Tag = "value;";
+            listViewItem27.Tag = "value;";
+            listViewItem28.Tag = "value;";
+            this.lvwSections.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3,
+            listViewItem4,
+            listViewItem5,
+            listViewItem6,
+            listViewItem7,
+            listViewItem8,
+            listViewItem9,
+            listViewItem10,
+            listViewItem11,
+            listViewItem12,
+            listViewItem13,
+            listViewItem14,
+            listViewItem15,
+            listViewItem16,
+            listViewItem17,
+            listViewItem18,
+            listViewItem19,
+            listViewItem20,
+            listViewItem21,
+            listViewItem22,
+            listViewItem23,
+            listViewItem24,
+            listViewItem25,
+            listViewItem26,
+            listViewItem27,
+            listViewItem28});
             this.lvwSections.Location = new System.Drawing.Point(12, 39);
             this.lvwSections.Name = "lvwSections";
             this.lvwSections.Size = new System.Drawing.Size(129, 339);
@@ -118,25 +204,12 @@
             // 
             this.pnlEdit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlEdit.Controls.Add(this.lblDeclColour);
-            this.pnlEdit.Controls.Add(this.LblColour);
             this.pnlEdit.Controls.Add(this.txtValue);
+            this.pnlEdit.Controls.Add(this.LblColour);
             this.pnlEdit.Location = new System.Drawing.Point(754, 40);
             this.pnlEdit.Name = "pnlEdit";
             this.pnlEdit.Size = new System.Drawing.Size(129, 339);
             this.pnlEdit.TabIndex = 17;
-            // 
-            // LblColour
-            // 
-            this.LblColour.AutoSize = true;
-            this.LblColour.Font = new System.Drawing.Font("Segoe UI", 13.25F);
-            this.LblColour.LinkColor = System.Drawing.Color.White;
-            this.LblColour.Location = new System.Drawing.Point(4, 2);
-            this.LblColour.Name = "LblColour";
-            this.LblColour.Size = new System.Drawing.Size(120, 25);
-            this.LblColour.TabIndex = 18;
-            this.LblColour.TabStop = true;
-            this.LblColour.Text = "213, 123, 123";
-            this.LblColour.Visible = false;
             // 
             // lblDeclColour
             // 
@@ -156,6 +229,21 @@
             this.txtValue.Size = new System.Drawing.Size(120, 22);
             this.txtValue.TabIndex = 18;
             this.txtValue.Visible = false;
+            this.txtValue.TextChanged += new System.EventHandler(this.txtValue_TextChanged);
+            // 
+            // LblColour
+            // 
+            this.LblColour.AutoSize = true;
+            this.LblColour.Font = new System.Drawing.Font("Segoe UI", 13.25F);
+            this.LblColour.LinkColor = System.Drawing.Color.White;
+            this.LblColour.Location = new System.Drawing.Point(4, 2);
+            this.LblColour.Name = "LblColour";
+            this.LblColour.Size = new System.Drawing.Size(120, 25);
+            this.LblColour.TabIndex = 18;
+            this.LblColour.TabStop = true;
+            this.LblColour.Text = "213, 123, 123";
+            this.LblColour.Visible = false;
+            this.LblColour.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LblColour_LinkClicked);
             // 
             // bgEditor
             // 

@@ -68,14 +68,29 @@ namespace BosonTools
                     pnlBg.Invalidate();
                     break;
             }
-            bgEdit.loadBackgroundData(main.datalocation + levelname, lvwSections);
+            bgEdit.loadBackgroundDataNouveau(main.datalocation + levelname, lvwSections);
             //bgEdit.visualizeBackgrounds(main.datalocation + levelname, pnlBg);
         }
 
         private void lvwSections_SelectedIndexChanged(object sender, EventArgs e)
         {
-            bgEdit.listviewToEditables(lvwSections, txtValue, LblColour, lblDeclColour);
+            bgEdit.listviewtoEditablesNouveau(lvwSections, txtValue, LblColour, lblDeclColour);
             //MessageBox.Show(lvwSections.SelectedItems[0].Tag.ToString());
+        }
+
+        private void LblColour_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            bgEdit.colorDialogEvent(LblColour, lvwSections);
+        }
+
+        private void txtValue_TextChanged(object sender, EventArgs e)
+        {
+            bgEdit.textboxEvent(txtValue, lvwSections);
+        }
+
+        private void btnSaveChanges_Click(object sender, EventArgs e)
+        {
+            bgEdit.buildLua(main.datalocation + levelname + "_", lvwSections);
         }
     }
 }
